@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projects</title>
+    <link rel="stylesheet" href="./resources/css/styles.css">
+</head>
+
+<body>
+    <nav>
+
+    </nav>
+
+    <main>
+        <header>
+            <nav>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+
+
+            </nav>
+        </header>
+        <div class="dummy-header">
+            <p>Dummy</p>
+        </div>
+        <section id="about-me ">
+            <div class="projects-cont">
+                <div>
+
+                    <h1>Projects
+                    </h1>
+                </div>
+                <div id=" about-me-detail>">
+                    <p>Under Construction...</p>
+
+                </div>
+                <div class="proj-cont">
+                    <a href="https://github.com/davegd1387/mixed-messages"><img id=marley-img1 src="/home/dgd/Codecademy/ResponsiveClubWebsite/images/roadster-1600-1970rs.jpeg" alt=" Doggie "></a>
+                    <!--<p id="marley-title">(Not my actual photo)</p>-->
+                </div>
+                <div class="proj-cont">
+                    <img id=marley-img2 src="/home/dgd/Codecademy/MyPortfolio/images/m2.JPG" alt=" Doggie ">
+                    <!--<p id="marley-title">(Not my actual photo)</p>-->
+                </div>
+                <div class="proj-cont">
+                    <img id=marley-img3 src="/home/dgd/Codecademy/MyPortfolio/images/m3.JPG" alt=" Doggie ">
+                    <!--<p id="marley-title ">(Not my actual photo)</p>-->
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer></footer>
+
+</body>
+<script>
+    const projCont = document.getElementsByClassName("proj-cont ");
+
+    setInterval(function() {
+
+        for (i = 0; i < projCont.length; i++) {
+            if (projCont[i].style.display != 'none') {
+                projCont[i].style.display = 'none';
+                if (i === projCont.length - 1) {
+                    projCont[0].style.display = 'block';
+                    //console.log("if 1 ")
+                } else {
+                    projCont[i + 1].style.display = 'block';
+                    //console.log("if 2 ")
+
+                }
+                break;
+            }
+        }
+
+
+
+    }, 2500);
+</script>
+
+
+</html>
