@@ -19,12 +19,15 @@ function switchIt() {
         element.style.color = "red";
 
     }
-    if (imgElement.src == "file:///home/dgd/Codecademy/MyPortfolio/images/Marley.png") {
+    // if (imgElement.src == "file:///home/dgd/Codecademy/MyPortfolio/images/Marley.png") {
+    //if (imgElement.src == "./images/Marley.png") {
+    if (element.innerHTML == "(Not my actual photo)") {
         element.innerHTML = "(Actually, our doggy!)"
-        imgElement.src = "/home/dgd/Codecademy/MyPortfolio/images/Snarley.jpg "
+            // imgElement.src = "/home/dgd/Codecademy/MyPortfolio/images/Snarley.jpg"
+        imgElement.src = "./images/Snarley.jpg"
     } else {
         element.innerHTML = "(Not my actual photo)";
-        imgElement.src = "/home/dgd/Codecademy/MyPortfolio/images/Marley.png "
+        imgElement.src = "./images/Marley.png "
 
     }
 }
@@ -32,11 +35,13 @@ function switchIt() {
 function mouseOver() {
     element.style.color = "red";
     element.innerHTML = "(Actually, our doggy!)"
-    imgElement.src = "/home/dgd/Codecademy/MyPortfolio/images/Snarley.jpg"
+        // imgElement.src = "/home/dgd/Codecademy/MyPortfolio/images/Snarley.jpg"
+    imgElement.src = "./images/Snarley.jpg"
 }
+
 
 function mouseOut() {
     element.style.color = "white";
     element.innerHTML = "(Not my actual photo)";
-    imgElement.src = "/home/dgd/Codecademy/MyPortfolio/images/Marley.png"
+    imgElement.src = "./images/Marley.png"
 }
