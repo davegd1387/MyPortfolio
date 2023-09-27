@@ -20,9 +20,11 @@ function switchIt() {
     element.innerHTML = "(Actually, our doggy!)";
     imgElement.src = "./images/Marley.png ";
     element.style.color = "blue";
+    console.log(`if ${imgElement.src}`);
   } else {
     element.innerHTML = "(Not my actual photo)";
     imgElement.src = "./images/Snarley.jpg";
     element.style.color = "black";
+    console.log(`else ${imgElement.src}`);
   }
 }
